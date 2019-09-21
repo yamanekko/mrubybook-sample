@@ -18,7 +18,6 @@ main(void)
   printf("sym2: %d\n", sym2);
   mrb_p(mrb, mrb_symbol_value(sym3));
   printf("sym3: %d\n", sym3);
-  printf("name: '%s'\n", mrb_sym2name(mrb, sym1));
 
   mrb_close(mrb);
   return 0;

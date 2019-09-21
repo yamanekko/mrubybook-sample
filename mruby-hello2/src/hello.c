@@ -10,12 +10,12 @@ mrb_mruby_hello_initialize(mrb_state *mrb, mrb_value self)
 {
   mrb_int n;
   mrb_value name;
-  mrb_get_args(mrb, "iS", &n, &name);
+  mrb_get_args(mrb, "Si", &name, &n);
   if (n < 0 || n >= PUNCT_SIZE) {
     mrb_raisef(mrb, E_ARGUMENT_ERROR, "invalid argument");
   }
-  mrb_iv_set(mrb, self, mrb_intern_lit(mrb, "@num"), mrb_fixnum_value(n));
   mrb_iv_set(mrb, self, mrb_intern_lit(mrb, "@name"), name);
+  mrb_iv_set(mrb, self, mrb_intern_lit(mrb, "@num"), mrb_fixnum_value(n));
   return self;
 }
 

@@ -23,7 +23,7 @@ mrb_celsius_init(mrb_state *mrb, mrb_value self)
   mrb_float deg;
   mrb_get_args(mrb, "f", &deg);
   mrb_value deg_val = mrb_float_value(mrb, deg);
-  mrb_iv_set(mrb, self, mrb_intern_lit(mrb, "degree"), deg_val);
+  mrb_iv_set(mrb, self, mrb_intern_lit(mrb, "@degree"), deg_val);
 
   return deg_val;
 }
@@ -31,7 +31,7 @@ mrb_celsius_init(mrb_state *mrb, mrb_value self)
 static mrb_value
 mrb_celsius_to_fahr(mrb_state *mrb, mrb_value self)
 {
-  mrb_value deg_val = mrb_iv_get(mrb, self, mrb_intern_lit(mrb, "degree"));
+  mrb_value deg_val = mrb_iv_get(mrb, self, mrb_intern_lit(mrb, "@degree"));
   mrb_float deg = mrb_float(deg_val);
 
   return mrb_float_value(mrb, c2f(deg));

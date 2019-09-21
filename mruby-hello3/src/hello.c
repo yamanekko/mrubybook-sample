@@ -38,7 +38,7 @@ mrb_mruby_hello_initialize(mrb_state *mrb, mrb_value self)
   char *name;
   hello_name *datap;
 
-  mrb_get_args(mrb, "is", &n, &name, &len);
+  mrb_get_args(mrb, "si", &name, &len, &n);
   if (n < 0 || n >= PUNCT_SIZE) {
     mrb_raisef(mrb, E_ARGUMENT_ERROR, "invalid argument");
   }
