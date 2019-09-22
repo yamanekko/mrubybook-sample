@@ -1,0 +1,9 @@
+version: '3'
+services:
+  mruby-dev:
+    build: .
+    container_name: mruby-dev
+    volumes:
+      - .:/work:delegated
+      - ./mruby/build
+    tty: true
