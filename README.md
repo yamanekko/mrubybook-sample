@@ -1,13 +1,17 @@
-# 入門mruby
+( [-> Japanese](./README.ja.md) )
 
-このリポジトリは、Yamanekko著『入門mruby　Cからmruby APIを使いこなす』のサンプルコードをまとめたものです。
+# mruby handbook support page
 
-## 使い方
+This repository is a collection of sample code from "mruby handbook: Programming mruby API by Example".
 
-Gitpodから利用する場合は、以下のボタンを押して下さい。なお、このGitHubのリポジトリをforkしてからボタンを押すと、そのまま更新した場合にgit pushで自分のリポジトリを更新できるようになるはずです。
+
+## Usage
+
+If you want to use it on Gitpod, please click the button below.
+If you fork this GitHub repository and press this button, you can update your own repository with git push when you update it.
 
 [![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/from-referrer/)
 
-Dockerを使う場合は、この[Dockerfile](./Dockerfile)や[docker-compose.yml](./docker-compose.yml)をお使いください。
+If you use Docker, please use [Dockerfile](./Dockerfile) or [docker-compose.yml](./docker-compose.yml).
 
 
