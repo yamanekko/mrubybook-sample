@@ -7,7 +7,7 @@
 mrb_value
 body1_func(mrb_state *mrb, mrb_value arg)
 {
-  mrb_float flt = mrb_to_flo(mrb, arg);
+  mrb_float flt = mrb_as_float(mrb, arg);
   if (flt < 0) {
     mrb_raisef(mrb, E_ARGUMENT_ERROR, "out of domain: %S", mrb_float_value(mrb, flt));
   } else {

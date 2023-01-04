@@ -13,6 +13,7 @@ main(void)
 
   mrb_sym const_foo = mrb_intern_lit(mrb, "FOO");
   mrb_const_set(mrb, mrb_obj_value(mrb->object_class), const_foo, mrb_fixnum_value(42));
+  mrb_const_set(mrb, mrb_obj_value(foo_class), const_foo, mrb_fixnum_value(63));
   mrb_const_set(mrb, mrb_obj_value(bar_class), const_foo, mrb_fixnum_value(84));
 
   mrb_value foo1 = mrb_const_get(mrb, mrb_obj_value(mrb->object_class), const_foo);

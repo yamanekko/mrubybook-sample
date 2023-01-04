@@ -1,5 +1,6 @@
 FOO = 42
 class Foo
+  FOO = 63
 end
 class Bar < Foo
   FOO = 84
