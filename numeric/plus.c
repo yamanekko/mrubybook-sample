@@ -10,9 +10,9 @@ main(void)
 
   mrb_value n1 = mrb_fixnum_value(12);
   mrb_value n2 = mrb_fixnum_value(34);
-  val = mrb_fixnum_plus(mrb, n1, n2);
+  val = mrb_num_add(mrb, n1, n2);
   mrb_p(mrb, val);
-  val = mrb_num_div(mrb, n1, n2);
+  val = mrb_num_mul(mrb, n1, n2);
   mrb_p(mrb, val);
   mrb_close(mrb);
   return 0;
