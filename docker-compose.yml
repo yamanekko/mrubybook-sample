@@ -5,5 +5,5 @@ services:
     container_name: mruby-dev
     volumes:
       - .:/work:delegated
-      - ./mruby/build
+      - ./mruby/build:/work/mruby/build
     tty: true
